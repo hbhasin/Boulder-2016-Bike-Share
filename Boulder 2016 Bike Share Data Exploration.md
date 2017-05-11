@@ -27,9 +27,10 @@ This study has three parts:
 ## Data Acquisition
 
 Data for this study was downloaded from several sources and combined using the following steps:
-1.	Downloaded B-cycle 2016 Trips and Kiosk data from [Boulder B-Cycle website](https://www.denverbcycle.com/company). The columns names were changed to comply with Python code best practices.
-2.	Created a list of the 7921 combinations of the 89 checkout/return kiosks. Used [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) to provide the bicycling distance and time between each checkout and return kiosk. Adopted Tyler’s method of finding the average distance by taking the distance from each checkout-return pair’s distance separately then averaging it. As he pointed out in his study, this approach was taken “because of the large number of one-way streets in the Boulder downtown area where the kiosks are highly clustered”. Google only supports a maximum of 2500 requests a day, it took four days to obtain this data.
-3.	Obtained daily and hourly weather data via [Dark Sky API](https://darksky.net/dev/) for all of 2016. Dark Sky supports up to 1000 requests per day
+1. Downloaded Boulder B-cycle May 2011-January 2017 Trip Data from [Dropbox](https://www.dropbox.com/s/hk8csl6fm4q0221/Boulder B-cycle May 2011-January 2017 Trip Data.xlsx?dl=0). The columns names were changed to comply with Python code best practices and only rows for 2016 were kept for this exercise.
+2. Created a list of the 1849 combinations of the 43 checkout/return kiosks. Used [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) to provide the bicycling distance and time between each checkout and return kiosk. Adopted Tyler’s method of finding the average distance by taking the distance from each checkout-return pair’s distance separately then averaging it. As he pointed out in his study, this approach was taken “because of the large number of one-way streets in the Boulder downtown area where the kiosks are highly clustered”. Google only supports a maximum of 2500 requests a day, so it took two days to obtain this data.
+3. Obtained daily and hourly weather data via [Dark Sky API](https://darksky.net/dev/) for all of 2016. Dark Sky supports up to 1000 requests per day.
+
 
 ### Basic Ridership Statistics 
 #### Number of Rides 
