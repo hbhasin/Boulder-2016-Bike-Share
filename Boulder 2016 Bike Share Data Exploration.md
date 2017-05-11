@@ -14,7 +14,7 @@ In his study, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/20
 
 In his report, [Boulder B-cycle Data Analysis](https://rpubs.com/rpubsmonish/175792), [Monish Sunju Prabhakar](https://www.linkedin.com/in/monishsp) attempted to predict the type of membership pass using the Random Forest classification algorithm with three numeric attributes. 
 
-This study will explore the publicly available 2016 Boulder B-cycle Trip Data and perform some predictive analytics on the number of bike checkouts using calendar, clock and weather variables as the predictors. The reporting style will follow the [Denver 2016 B-cycle Ridership Data Exploration and Predictive Analytics](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/Denver 2016 Bike Share Data Exploration.md) study to provide continuity and similarity.
+This study will explore the publicly available 2016 Boulder B-cycle Trip Data and perform some predictive analytics on the number of bike checkouts using calendar, clock and weather variables as the predictors. The reporting style will follow the [Denver 2016 B-cycle Ridership Data Exploration and Predictive Analytics](https://github.com/hbhasin/Denver-2016-Bike-Share/blob/master/Denver%202016%20Bike%20Share%20Data%20Exploration.md) study to provide continuity and similarity.
 
 
 This study has three parts:
