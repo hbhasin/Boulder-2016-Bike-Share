@@ -10,7 +10,7 @@ Boulder B-cycle posts its trips data set on its website as soon as its annual re
 
 ![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Boulder%202016%20Annual%20Report.PNG)
 
-In his study, [Exploring 2014 Denver B-cycle Ridership] (http://datawrangl.com/2016/02/21/denver-bcycle/), [Tyler Byers](https://www.linkedin.com/in/tylerbyers) determined that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. 
+In his study, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/), [Tyler Byers](https://www.linkedin.com/in/tylerbyers) determined that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. 
 
 In his report, [Boulder B-cycle Data Analysis](https://rpubs.com/rpubsmonish/175792), [Monish Sunju Prabhakar](https://www.linkedin.com/in/monishsp) attempted to predict the type of membership pass using the Random Forest classification algorithm with three numeric attributes. 
 
