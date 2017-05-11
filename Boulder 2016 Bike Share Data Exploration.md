@@ -34,54 +34,69 @@ Data for this study was downloaded from several sources and combined using the f
 
 ### Basic Ridership Statistics 
 #### Number of Rides 
-The B-cycle data, as downloaded, contained 419,611 rows of trips data. Under normal circumstances this would mean that 419,611 B-cycle trips were taken in 2016. However, the [2016 Boulder B-cycle annual report](http://Boulder.bcycle.com/docs/librariesprovider34/default-document-library/dbs_annualreport_2016_05.pdf) acknowledged 354,652 total trips for the year. The breakdown was as follows:
+The B-cycle data, as downloaded, contained 419,611 rows of trips data. Under normal circumstances this would mean that 419,611 B-cycle trips were taken in 2016. However, the [2016 Boulder B-cycle annual report](http://denver.bcycle.com/docs/librariesprovider34/default-document-library/dbs_annualreport_2016_05.pdf) acknowledged just 94,446 total trips for the year. The breakdown was as follows:
 
 Membership Type | Number of Trips
 --------------- | -------------
-Annual (And Annual Plus) | 193,113
-Flex Pass | 3,565
-30 Day | 54,004
-24 hour online | 117
-24-hour Kiosk | 103,853
-**Total Trips** | **354,652**
+Annual (Republic Rider) | 52,951
+24-hour (Day Tripper) | 27,628
+Monthly (People’s Pedaler) | 10,392
+Pay-per-trip (Casual Cruiser) | 816
+**Total Trips**	 | **91,787**
 
-The Trips dataset reported the following breakdown:
 
-Membership Type | Number of Trips
---------------- | -------------
-Annual (Boulder B-cycle) | 82,199
-Annual Plus (Boulder B-cycle) | 84,271
-Flex Pass | 3,565
-Monthly (Boulder B-cycle) | 54,004
-24 hour online (Boulder B-cycle) | 117
-24-hour Kiosk Only (Boulder B-cycle) | 87,315
-**Total Trips** | **311,471**
-
-There were several other Membership Types that were also listed under “Denver B-cycle” in the User’s Program:
+The Trips dataset reported 4 rows with NaN (Not A Number) entries. Removal of these 4 rows resulted in 113,724 rows with the following breakdown:
 
 Membership Type | Number of Trips
 --------------- | -------------
-Boulder B-cycle Founder (Boulder B-cycle) | 18,003
-Not Applicable | 64,959
-Single Ride (Boulder B-cycle) | 16,526
+Annual (Republic Rider) | 57,042
+24-hour (Day Tripper) | 28,948
+Maintenance | 15,454
+Monthly (People’s Pedaler) | 10,961
+Pay-per-trip (Casual Cruiser) | 853
+Semester (150-day) | 465
+7-day | 1
+**Total Trips** | **113,724**
 
-In particular, the “Not Applicable” membership type accounted for more than 15% of the 
-419,611 trips. Perhaps some of these trips were used in the Boulder B-cycle annual report.
+Removing “Maintenance” entries brought the number of rows down to 98,270. Removing entries with a Trip Duration = 0 resulted in 96,101 rows.
+Over 1.4% of the Boulder B-cycle rides (1343 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.
 
-Also over 2.3% of the Boulder B-cycle rides (9,954 rides) had the same checkout station as return station with a trip duration of only 1 minute (Figure 1). Again, Tyler’s explanation of why these trips should be removed from the dataset makes sense - “I believe these should be filtered out because I believe the majority of these “rides” are likely people checking out a bike, and then deciding after a very short time that this particular bike doesn’t work for them. I believe that most of the same-kiosk rides under 5 minutes or so likely shouldn’t count, but only culled the ones that were one minute long”.
-
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%201.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%201.PNG)
 
 <p align="center">
 FIGURE 1: TRIP DURATION WHEN CHECKOUT AND RETURN KIOSKS ARE THE SAME
 </p>
 
-There were 6574 rows in the Trips dataset that had kiosk names not in the Kiosk Master List. These 6574 rows were removed accordingly.
+Removing entries with a Trip Duration = 1 resulted in 94,512 rows with the following breakdown:
 
-Removing the 9,954 rows with a trip duration of 1 minute and 6574 rows with invalid kiosk names resulted in **394,431 Boulder B-cycle rides in 2016**.
+Membership Type | Number of Trips
+--------------- | -------------
+Annual (Republic Rider) | 54,737
+24-hour (Day Tripper) | 7,935
+Monthly (People’s Pedaler) | 0,568
+Pay-per-trip (Casual Cruiser) | 821
+Semester (150-day) | 450
+7-day | 1
+**Total Trips** | **94,512**
 
-### Distance Traveled
-To estimate the distance between checkout and return kiosks when they are the same, Tyler’s method of using the “average speed of all the other rides (nominal distance ridden divided by the duration), and then applying this average speed to the same-kiosk trip durations” was adopted. This resulted in **670,802 miles ridden in 2016**.
+This number appeared closer to the 94,446 trips reported by Boulder B-cycle although there were differences amongst the individual membership types.
+
+There were 193 rows in the Trips dataset that had “Maintenance” entry in the Return Kiosk column. These 193 rows were removed accordingly.
+
+Removing the 1,343 rows with a trip duration of 1 minute and 193 rows with invalid kiosk names resulted in **94,319 Boulder B-cycle rides in 2016**.
+
+Membership Type | Number of Trips
+--------------- | -------------
+Annual (Republic Rider) | 54,610
+24-hour (Day Tripper) | 27,889
+Monthly (People’s Pedaler) | 10,549
+Pay-per-trip (Casual Cruiser) | 821
+Semester (150-day) | 449
+7-day | 1
+**Total Trips** | **94,319**
+
+## Distance Traveled
+To estimate the distance between checkout and return kiosks when they are the same, Tyler’s method of using the “average speed of all the other rides (nominal distance ridden divided by the duration), and then applying this average speed to the same-kiosk trip durations” was adopted. This resulted in 143,006 miles ridden in 2016 and sharply contrasted with the 229,071 miles reported by Boulder B-cycle. 
 
 ### Most Popular and Least Popular Checkout and Return Kiosks 
 ### Most Popular 
