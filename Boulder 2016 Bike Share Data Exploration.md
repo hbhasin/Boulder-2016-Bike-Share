@@ -72,8 +72,8 @@ Removing entries with a Trip Duration = 1 resulted in 94,512 rows with the follo
 Membership Type | Number of Trips
 --------------- | -------------
 Annual (Republic Rider) | 54,737
-24-hour (Day Tripper) | 7,935
-Monthly (People’s Pedaler) | 0,568
+24-hour (Day Tripper) | 27,935
+Monthly (People’s Pedaler) | 10,568
 Pay-per-trip (Casual Cruiser) | 821
 Semester (150-day) | 450
 7-day | 1
