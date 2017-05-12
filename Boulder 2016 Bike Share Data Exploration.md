@@ -655,9 +655,9 @@ Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of 
 1 | Greater than 10 | 1	Greater than 10 | 1
 2 | Greater than 10 | 1	Greater than 10 | 1
 3 | Between 1 and 10 | 0 | Between 1 and 10 | 0
-4 | Greater than 10 | 1	Greater than 10 | 1
-5 | Greater than 10 | 1	Greater than 10 | 1
-6 | Greater than 10 | 1	Greater than 10 | 1
+4 | Greater than 10 | 1 | Greater than 10 | 1
+5 | Greater than 10 | 1	| Greater than 10 | 1
+6 | Greater than 10 | 1	| Greater than 10 | 1
 7 | Between 1 and 10 | 0 | Greater than 10 | 1
 8 | Between 1 and 10 | 0 | Between 1 and 10 | 0
 9 | Between 1 and 10 | 0 | Between 1 and 10 | 0
