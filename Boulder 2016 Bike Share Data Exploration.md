@@ -584,9 +584,9 @@ For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), P
 ### Classification Modeling Summary – Categorical Feature Set
 Metric | Logistic | Decision Tree | Random Forest | Extra Trees | Naïve Bayes | Nearest Neighbors | Gradient Boosting | Multi-Layer Perceptron
 ------ | -------- | ------------- | ------------- | ----------- | ----------- | ----------------- | ----------------- | ---------------------
-Accuracy | 0.877010 | 0.811258 | 0.856197 | 0.877010 | 0.756386	0.714286 | 0.817408 | 0.875591
+Accuracy | 0.877010 | 0.811258 | 0.856197 | 0.877010 | 0.756386 | 0.714286 | 0.817408 | 0.875591
 F1 (macro) | 0.877009 | 0.811243 | 0.856088 | 0.876795	0.747293 | 0.703119 | 0.817388 | 0.875557
-F1 (micro) | 0.877010 | 0.811258 | 0.856197 | 0.877010	0.756386 | 0.714286 | 0.817408 | 0.875591
+F1 (micro) | 0.877010 | 0.811258 | 0.856197 | 0.877010 | 0.756386 | 0.714286 | 0.817408 | 0.875591
 Precision (macro) | 0.877030 | 0.811341 | 0.857210 | 0.877409 | 0.799952 | 0.751804 | 0.817524 | 0.875965
 Precision (micro) | 0.877010 | 0.811258 | 0.856197 | 0.877010 | 0.756386 | 0.714286 | 0.817408 | 0.875591
 Recall (macro) | .8777014 | 0.811251 | 0.856172 | 0.876995 | 0.756566 | 0.714103 | 0.817399 | 0.875576
@@ -632,7 +632,7 @@ Precision (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815
 Recall (macro) | 0.772949 | 0.845790 | 0.878416 | 0.872256 | 0.771603 | 0.819944 | 0.851932 | 0.867535
 Recall (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
 Cross Validation | 0.771672 | 0.832108 | 0.874368 | 0.871019 | 0.765200 | 0.822538 | 0.843486 | 0.852682
-Execution Time (sec) | 9.676564 | 0.301543 | 3.972808 | 3.246149 | 0.106590 | 0.953759	20.225848 | 4.669855
+Execution Time (sec) | 9.676564 | 0.301543 | 3.972808 | 3.246149 | 0.106590 | 0.953759 | 20.225848 | 4.669855
 
 
 Both the Random Forest and the Extra Trees classifiers achieved the highest accuracy and the Naïve Bayes the lowest. The cross validation test accuracy were comparable to the F1 (micro), Precision (micro) and the Recall (micro) accuracies.
