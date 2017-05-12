@@ -669,7 +669,7 @@ This study covered three areas:
 
 1. Explored the Trips datasets and visualized the data and provided useful and interesting information.
 2. Deployed a variety of supervised machine learning regression models to predict the number of checkouts using calendar, clock and weather attributes.
-3. Deployed a variety of supervised machine learning classification models to predict four classes reflecting the number of checkouts using calendar, clock and weather attributes.
+3. Deployed a variety of supervised machine learning classification models to predict two classes reflecting the number of checkouts using calendar, clock and weather attributes.
 
 ## Next Steps
 
