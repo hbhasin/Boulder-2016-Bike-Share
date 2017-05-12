@@ -209,7 +209,7 @@ Annual (Republic Rider) | 54,610
 Monthly (People’s Pedaler) | 10,549
 Pay-per-trip (Casual Cruiser) | 821
 Semester (150-day) | 449
-7-day	1
+7-day | 1
 
 
 
