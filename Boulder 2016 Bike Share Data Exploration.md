@@ -629,8 +629,8 @@ F1 (macro) | 0.772932 | 0.845788 | 0.878403 | 0.872190 | 0.769910 | 0.812961 | 0
 F1 (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
 Precision (macro) | 0.773004 | 0.845802 | 0.878721 | 0.873266 | 0.779530 | 0.829477 | 0.852033 | 0.867893
 Precision (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
-Recall (macro) | 0.772949 | 0.845790 | 0.878416	0.872256 | 0.771603 | 0.819944 | 0.851932 | 0.867535
-Recall (micro) | 0.772942 | 0.845790 | 0.878430	0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
+Recall (macro) | 0.772949 | 0.845790 | 0.878416 | 0.872256 | 0.771603 | 0.819944 | 0.851932 | 0.867535
+Recall (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
 Cross Validation | 0.771672 | 0.832108 | 0.874368 | 0.871019 | 0.765200 | 0.822538 | 0.843486 | 0.852682
 Execution Time (sec) | 9.676564 | 0.301543 | 3.972808 | 3.246149 | 0.106590 | 0.953759	20.225848 | 4.669855
 
@@ -647,21 +647,21 @@ Both the Random Forest and the Extra Trees classifiers achieved the highest accu
 * The non-linear regression models performed better than the linear models. In particular, even with a reduced feature set, the non-linear models such as the Random Forest and the Extra Trees were the best performers with R Squared values well above 0.9.
 
 ## Testing Classifier on unseen samples
-The Random Forest Classifier with a predictive accuracy of 79.3% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The classifier predicted 8 of the 10 samples accurately. Of the remaining 2 samples, it predicted one class below the actual class in both samples.
+The Random Forest Classifier with a predictive accuracy of 87.8% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The classifier predicted 9 of the 10 samples accurately. Of the remaining 1 sample, it predicted one class above the actual class.
 
 
 Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of Checkouts | Class Number
 ------------- | -------------------------- | ------------ | ----------------------------- | ------------
-1 | Between 51 and 100 | 1 | Between 51 and 100 | 1
-2 | Between 1 and 50 | 0 | Between 1 and 50 | 0
-3 | Between 51 and 100 | 1 | Between 1 and 50 | 0
-4 | Between 101 and 150 | 2 | Between 101 and 150 | 2
-5 | Between 51 and 100 | 1 | Between 51 and 100 | 1
-6 | Between 1 and 50 | 0 | Between 1 and 50 | 0
-7 | Between 1 and 50 | 0 | Between 1 and 50 | 0
-8 | Between 51 and 100 | 1 | Between 1 and 50 | 0
-9 | Between 51 and 100 | 1 | Between 51 and 100 | 1
-10 | Between 1 and 50 | 0 | Between 1 and 50 | 0
+1 | Greater than 10 | 1	Greater than 10 | 1
+2 | Greater than 10 | 1	Greater than 10 | 1
+3 | Between 1 and 10 | 0 | Between 1 and 10 | 0
+4 | Greater than 10 | 1	Greater than 10 | 1
+5 | Greater than 10 | 1	Greater than 10 | 1
+6 | Greater than 10 | 1	Greater than 10 | 1
+7 | Between 1 and 10 | 0 | Greater than 10 | 1
+8 | Between 1 and 10 | 0 | Between 1 and 10 | 0
+9 | Between 1 and 10 | 0 | Between 1 and 10 | 0
+10 | Between 1 and 10 | 0 | Between 1 and 10 | 0
 
 # Summary
 
