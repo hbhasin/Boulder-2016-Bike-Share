@@ -104,54 +104,86 @@ The following ten kiosks were the most popular checkout kiosks by number of tota
 
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
-16th & Wynkoop | 11,174
-16th & Broadway |	3,565
-1350 Larimer | 10,837
-18th & California | 9,865
-1550 Glenarm | 9,441
-18th & Arapahoe | 8,531
-20th & Chestnut | 8,240
-13th & Speer | 8,228
-REI	 | 8,218
-16th & Little Raven | 8,198
+115th & Pearl | 5443
+13th & Spruce | 4272
+Municipal Building | 3666
+11th & Pearl | 3566
+Folsom & Colorado | 3565
+13th & Arapahoe | 3392
+20th & Pearl | 3327
+Broadway & Alpine | 3147
+31st & Pearl | 2976
+Broadway & Euclid | 2968
+
+The most popular Checkout Kiosk to Return Kiosk routes were as follows:
+
+Checkout Kiosk | Return Kiosk | Number of Trips
+-------------- | ------------ | ---------------
+13th & Spruce | Broadway & Alpine | 724
+Broadway & Alpine | 13th & Spruce | 695
+6th & Canyon | Municipal Building | 680
+Municipal Building | 6th & Canyon | 641
+20th & Pearl | 15th & Pearl | 604
+Municipal Building | Municipal Building | 566
+28th & Mapleton | 26th & Pearl | 552
+Folsom & Pearl | 15th & Pearl | 529
+13th & Arapahoe | 13th & Arapahoe | 506
+15th & Pearl | 20th & Pearl | 503
 
 The following ten kiosks were the most popular return kiosks by number of total bike checkouts in 2016.
 
-Return Kiosk | Number of Checkouts
+Return Kiosk | Number of Returns
 ------------ | -------------------
-16th & Wynkoop | 11,289
-1350 Larimer | 10,920
-16th & Broadway | 10,870
-18th & California | 9,863
-1550 Glenarm | 9,501
-18th & Arapahoe | 8,549
-20th & Chestnut | 8,356
-REI | 8,284
-13th & Speer | 8,272
-16th & Little Raven | 8,267
+115th & Pearl | 5366
+13th & Spruce | 909
+Municipal Building | 3919
+13th & Arapahoe | 3898
+11th & Pearl | 3737
+29th & Pearl | 3260
+21st & Arapahoe | 3178
+14th & Canyon | 3102
+20th & Pearl | 3055
+Broadway & Alpine | 3040
+
 
 ### Least Popular 
 The following ten kiosks were the least popular checkout kiosks by number of total bike checkouts in 2016.
 
 Checkout Kiosk | Number of Checkouts
 -------------- | -------------------
-Pepsi Center | 1,795
-32nd & Julian | 1,755
-25th & Lawrence | 1,736
-Colfax & Garfield | 1,725
-4th & Walnut | 1.663
-Decatur Federal Light Rail | 1,508
-Boulder Zoo | 1,490
-Colfax & Gaylord | 1,421
-17th & Curtis | 615
-39th & Fox | 332
+Broadway & Iris | 1328
+13th & College | 1299
+UCAR Center Green | 1227
+9th & Pearl | 982
+27th Way & Broadway | 678
+33rd & Fisher | 648
+Wilderness Place | 370
+30th & Diagonal Highway | 247
+30th & Marine | 159
+Gunbarrel North | 120
+
+The following ten kiosks were the least popular return kiosks by number of total bike returns in 2016.
+
+Return Kiosk | Number of Returns
+------------ | -------------------
+Broadway & Iris | 1265
+Broadway & University | 1070
+9th & Pearl | 963
+13th & College | 804
+33rd & Fisher | 708
+27th Way & Broadway | 509
+Wilderness Place | 426
+30th & Diagonal Highway | 263
+30th & Marine | 170
+Gunbarrel North | 114
+
 
 ## Map of Station Popularity
 ### Checkout Kiosks 
 
 The use of Tableau aided in the creation of the following map showing the popularity of the various Checkout Kiosks (Figure 2). The size of the circle is proportional to the number of checkouts from that kiosk in 2016. 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Checkouts_By_Checkout_Kiosk.JPG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%202.PNG)
 
 <p align="center">
 FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
@@ -160,7 +192,7 @@ FIGURE 2: CHECKOUT KIOSK LOCATIONS AND NUMBER OF CHECKOUTS IN 2016
 ### Return Kiosks 
 Similarly, the use of Tableau aided in the creation of the following map showing the popularity of the various Return Kiosks (Figure 3). The size of the circle corresponds to the number of checkouts returned to that kiosk in 2016.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Returns_By_Return_Kiosks.JPG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%203.PNG)
 
 <p align="center">
 FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
@@ -168,24 +200,21 @@ FIGURE 3: RETURN KIOSK LOCATIONS AND NUMBER OF RETURNS IN 2016
 
 
 ## Checkouts per Membership Type 
-Boulder B-cycle has a number of different membership passes. The following were the top ten by number of checkouts in 2016 (Figure 4).
+With the revisions made earlier to the membership type entries, the figure below shows the breakdown:
 
 Membership Type | Number of Checkouts
 --------------- | -------------------
-24-hour Kiosk Only (Boulder B-cycle | 85,680
-Annual Plus (Boulder B-cycle) | 82,202
-Annual (Boulder B-cycle) | 80,093
-Not Applicable | 56,250
-Monthly (Boulder B-cycle) | 52,811
-Boulder B-cycle Founder (Boulder B-cycle) | 17,675
-Single Rider (Boulder B-cycle) | 16,291
-Republic Rider (Annual) (Boulder B-cycle) | 5,930
-Flex Pass (Boulder B-cycle) | 3,507
-Republic Rider (Boulder B-cycle) | 1,229
+Annual (Republic Rider) | 54,610
+24-hour (Day Tripper) | 27,889
+Monthly (People’s Pedaler) | 10,549
+Pay-per-trip (Casual Cruiser) | 821
+Semester (150-day) | 449
+7-day	1
 
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%204.PNG)
+
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%204.PNG)
 
 
 <p align="center">
@@ -200,7 +229,7 @@ Bike checkout time is probably the most important attribute in the Trips dataset
 
 It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 10 AM onwards.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%205.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%205.PNG)
 
 
 <p align="center">
@@ -209,9 +238,9 @@ FIGURE 5: NUMBER OF CHECKOUTS BY HOUR IN 2016
 
 
 
-Figure 6 shows the average distance ridden by the hour of the day in 2016. More distance is covered during the 10 AM period and declining steadily after 3 PM.
+Figure 6 shows the average distance ridden by the hour of the day in 2016. Interestingly, more distance was covered during the very early hours of the morning (2 AM to 3 AM) period. The typical distance ridden ranged from 1.4 miles to 1.6 miles from 4 AM to 12 midnight.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%206.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%206.PNG)
 
 <p align="center">
 FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
