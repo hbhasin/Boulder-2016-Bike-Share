@@ -10,7 +10,7 @@ Boulder B-cycle posts its trips data set on its website as soon as its annual re
 
 ![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Boulder%202016%20Annual%20Report.PNG)
 
-[Source:](https://cdn01.bcycle.com/libraries/docs/librariesprovider35/default-document-library/b-cycleannualreport_2015_web.pdf?sfvrsn=2)
+[Source](https://cdn01.bcycle.com/libraries/docs/librariesprovider35/default-document-library/b-cycleannualreport_2015_web.pdf?sfvrsn=2)
 
 In his study, [Exploring 2014 Denver B-cycle Ridership](http://datawrangl.com/2016/02/21/denver-bcycle/), [Tyler Byers](https://www.linkedin.com/in/tylerbyers) determined that “most calendar and clock variables were highly significant when predicting ridership, and weather variables such as temperature and amount of cloud cover appear to be as well”. 
 
