@@ -600,33 +600,40 @@ Recall (micro) | 0.877010 | 0.811258 | 0.856197 | 0.877010 | 0.756386 | 0.714286
 Cross Validation | 0.858643 | 0.804258 | 0.856145 | 0.864045 | 0.740562 | 0.721885 | 0.799319 | 0.870338
 Execution Time (sec) | 10.791598 | 0.317235 | 4.023082 | 3.425960 | 0.175422 | 0.994537 | 48.096231 | 9.780759
 
-The Extra Trees model attained the highest accuracy in classifying the four classes. The Naïve Bayes model performed the poorest.
+The Extra Trees model attained the highest accuracy in classifying the two classes. The Naïve Bayes model attained the lowest.
 
 ## Classification Modeling – Numerical Feature Set
 Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 total features for regression modeling.
 
-As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 22, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+As in the case of Regression modeling, feature correlation was carried out to determine if any features had a high correlation with one another. As shown in Figure 26, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
-For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Gradient Boosting model is shown in Figure 25.
-
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2025.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2026.PNG)
 
 <p align="center">
-FIGURE 25: GRADIENT BOOSTING CLASSIFICATION MODEL FEATURE IMPORTANCE CHART
+FIGURE 26: FEATURE CORRELATION
+</p>
+
+For each model the training and test scores, Accuracy, F1 (micro), F1 (macro), Precision (macro), Precision (micro), Recall (macro) and Recall (micro) results were collected and summarized. In addition, the Decision Tree, Random Forest, Extra Trees and Gradient Boosting models also had their Feature Importance bar charts plotted. The chart for the Random Forest model is shown in Figure 27.
+
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2027.PNG)
+
+<p align="center">
+FIGURE 27: RANDOM FOREST CLASSIFICATION MODEL FEATURE IMPORTANCE CHART
 </p>
 
 ## Classification Modeling Summary – Numerical Feature Set
 Metric | Logistic | Decision Tree | Random Forest | Extra Trees | Naïve Bayes | Nearest Neighbors | Gradient Boosting | Multi-Layer Perceptron
 ------ | -------- | ------------- | ------------- | ----------- | ----------- | ----------------- | ----------------- | ---------------------
-Accuracy | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.760234 | 0.687135
-F1 (macro) | 0.341939 | 0.629112 | 0.675405 | 0.684538 | 0.384729 | 0.463753 | 0.647997 | 0.437630
-F1 (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
-Precision (macro) | 0.311641 | 0.625842 | 0.732482 | 0.727647 | 0.395476 | 0.543086 | 0.658037 | 0.457347
-Precision (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
-Recall (macro) | 0.380207 | 0.632630 | 0.646895 | 0.657962 | 0.411507 | 0.458458 | 0.639805 | 0.446176
-Recall (micro) | 0.640351 | 0.732456 | 0.793372 | 0.791910 | 0.504386 | 0.688109 | 0.688109 | 0.687135
-Cross Validation | 0.642573 | 0.727544 | 0.782407 | 0.778772 | 0.526725 | 0.684503 | 0.757427 | 0.664971
-Execution Time (sec) | 12.288280 | 0.190748 | 4.000826 | 3.295505 | 0.096340 | 0.941100 | 60.454736 | 3.061440
+Accuracy | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
+F1 (macro) | 0.772932 | 0.845788 | 0.878403 | 0.872190 | 0.769910 | 0.812961 | 0.851927 | 0.867515
+F1 (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
+Precision (macro) | 0.773004 | 0.845802 | 0.878721 | 0.873266 | 0.779530 | 0.829477 | 0.852033 | 0.867893
+Precision (micro) | 0.772942 | 0.845790 | 0.878430 | 0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
+Recall (macro) | 0.772949 | 0.845790 | 0.878416	0.872256 | 0.771603 | 0.819944 | 0.851932 | 0.867535
+Recall (micro) | 0.772942 | 0.845790 | 0.878430	0.872280 | 0.771523 | 0.815043 | 0.851939 | 0.867550
+Cross Validation | 0.771672 | 0.832108 | 0.874368 | 0.871019 | 0.765200 | 0.822538 | 0.843486 | 0.852682
+Execution Time (sec) | 9.676564 | 0.301543 | 3.972808 | 3.246149 | 0.106590 | 0.953759	20.225848 | 4.669855
+
 
 Both the Random Forest and the Extra Trees classifiers achieved the highest accuracy and the Naïve Bayes the lowest. The cross validation test accuracy were comparable to the F1 (micro), Precision (micro) and the Recall (micro) accuracies.
 
