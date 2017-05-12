@@ -36,7 +36,7 @@ The following project files are located in this project directory:
 
 
 ## Data Sources
-[Boulder B-cycle](https://boulder.bcycle.com/) - The Trips dataset was retrieve from [Dropbox](https://www.dropbox.com/s/hk8csl6fm4q0221/Boulder%20B-cycle%20May%202011-January%202017%20Trip%20Data.xlsx?dl=0).
+[Boulder B-cycle](https://boulder.bcycle.com/) - The Trips dataset was retrieved from [Dropbox](https://www.dropbox.com/s/hk8csl6fm4q0221/Boulder%20B-cycle%20May%202011-January%202017%20Trip%20Data.xlsx?dl=0).
 
 Distances between Checkout and Return Kiosks: Distances were retrieved from [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) using Python 3.6 script.
 
@@ -48,4 +48,4 @@ Geo-spatial Mapping: [Tableau](https://public.tableau.com/) was used to map the 
 All data analyses were done in Python and with publicly available libraries using Jupyter Notebook and IDLE except for the geo-spatial mapping of the number of bike checkouts and returns by kiosks which was done using Tableau.
 
 ## Acknowlegements
-The original plan was to use the Boulderr 2015 Trips dataset to continue the work by [Tyler Byers](https://github.com/tybyers/denver_bcycle) and [Monish Sunju Prabhakar](https://rpubs.com/rpubsmonish/175792). Fortunately, the 2016 dataset became available just in time for this project's undertaking. While there are certainly some differences between how the data were analyzed and reported by Boulder B-Cycle and the author, credit must go to [Kevin Crouse](kevin@boulderbcycle.org) for publishing its [2016 annual report](https://cdn01.bcycle.com/libraries/docs/librariesprovider35/default-document-library/b-cycleannualreport_2015_web.pdf?sfvrsn=2) and for providing the link to Dropbox. Credit also goes to my mentor, [Alex Chao](https://www.linkedin.com/in/alexchao56/) for his invaluable guidance and feedback on the progress of this project.Under construction
+The original plan was to use the Boulder 2015 Trips dataset to continue the work by [Monish Sunju Prabhakar](https://rpubs.com/rpubsmonish/175792). Fortunately, the 2016 dataset became available just in time for this project's undertaking. While there are certainly some differences between how the data were analyzed and reported by Boulder B-Cycle and the author, credit must go to [Kevin Crouse](https://boulder.bcycle.com/staff-board) for providing the link to Dropbox. Credit also goes to my mentor, [Alex Chao](https://www.linkedin.com/in/alexchao56/) for his invaluable guidance and feedback on the progress of this project.Under construction
