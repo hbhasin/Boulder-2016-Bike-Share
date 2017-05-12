@@ -447,7 +447,7 @@ The following regression models with their brief explanation were used in this s
   * A simple algorithm that uses a similarity measure (e.g. distance between neighbors) to predict the outcome.
 
 ## Regression Modeling with Categorical Feature Set
-The Checkout Month, Week Day and Hour numeric variables were converted to categorical features resulting in 45 total features for regression modeling.
+The Checkout Month, Week Day and Hour numeric variables were converted to categorical features resulting in 44 total features for regression modeling.
 
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
