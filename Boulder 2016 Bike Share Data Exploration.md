@@ -227,7 +227,7 @@ FIGURE 4: NUMBER OF CHECKOUTS BY MEMBERSHIP TYPE IN 2016
 ### Ridership by Hour 
 Bike checkout time is probably the most important attribute in the Trips dataset. Each checkout time was converted into its integer hour. For example, 7:02 AM or 7:59 AM would be converted to an integer of 7. In this way, total number of checkouts could be aggregated for the year and plotted against their hours of the day, as shown in Figure 5.
 
-It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 10 AM onwards.
+It appears that the highest number of checkouts occur between 4 PM and 5 PM with ridership increasing steadily from 6 AM onwards.
 
 ![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%205.PNG)
 
