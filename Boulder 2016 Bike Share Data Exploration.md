@@ -250,7 +250,7 @@ FIGURE 6: ESTIMATED AVERAGE MILES RIDDEN BY HOUR OF CHECKOUT IN 2016
 ## Ridership by Hour and Weekday 
 Figure 7 shows that weekday ridership patterns are similar. On the other hand weekend ridership demonstrate a busy afternoon (between 12 PM and 3 PM)
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%207.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%207.PNG)
 
 <p align="center">
 FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016
@@ -259,7 +259,7 @@ FIGURE 7: CHECKOUTS BY HOUR OF DAY PER WEEKDAY IN 2016
 ## Ridership by Month 
 Monthly checkouts, as shown in Figure 8, suggest high ridership during the summer months and low ridership during the winter months.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%208.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%208.PNG)
 
 <p align="center">
 FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016
@@ -267,22 +267,22 @@ FIGURE 8: TOTAL CHECKOUTS BY MONTH IN 2016
 
 ## Merging with Weather 
 
-It is highly likely that weather plays a very important role in bike ridership and bike checkout times. This was shown in the previous plots on total checkouts per hour of the day, by weekday, and by month. To verify this, weather data obtained from Dark Sky API was merged with the Trips dataset and several graphs plotted to visualize the relationships.
+It is highly likely that weather plays a very important role in bike ridership and bike checkout times. This was shown in the previous plots on total checkouts per hour of the day, by weekday, and by month. To verify this, weather data obtained from [Dark Sky API](https://darksky.net/dev/) was merged with the Trips dataset and several graphs plotted to visualize the relationships.
 
 ### Checkouts vs. Daily Temperature 
 
-Figure 9 shows the total number of checkouts against maximum and minimum daily temperature. It clearly suggests that ridership increases as the temperature increases and vice-versa.
+Figure 9 shows the total number of checkouts against maximum and minimum daily temperature. It clearly suggests that ridership increased as the temperature increased and vice-versa.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%209.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%209.PNG)
 
 <p align="center">
 FIGURE 9: TOTAL CHECKOUTS BY DAILY TEMPERATURE IN 2016
 </p>
 
-Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appears to have a subtle effect on bike ridership as shown in Figure 10.
+Apparent temperature, as defined by Dark Sky, is “apparent (or “feels like”) temperature in degrees Fahrenheit”. It appeared to have a subtle effect on bike ridership as shown in Figure 10.
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2010.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2010.PNG)
 
 <p align="center">
 FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
@@ -290,18 +290,18 @@ FIGURE 10: TOTAL CHECKOUTS BY DAILY APPARENT TEMPERATURE IN 2016
 
 
 ## Checkouts vs. Daily Cloud Cover 
-Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership is highest as the cloud cover stays at around 0.15.
+Dark Sky defines Cloud Cover as “the percentage of sky occluded by clouds, between 0 and 1, inclusive”. Figures 11 shows the total number of checkouts against daily cloud cover. They clearly suggest that ridership was highest as the cloud cover stayed at around 0.15.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2011.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2011.PNG)
 
 <p align="center">
 FIGURE 11: TOTAL CHECKOUTS BY DAILY CLOUD COVER IN 2016
 </p>
 
 ## Checkouts vs. Daily Wind Speed 
-Wind speed is reported in miles per hour. As shown in Figure 12, ridership does not seem to be somewhat impacted by higher wind speeds. 
+Wind speed is reported in miles per hour. As shown in Figure 12, ridership did not seem to be somewhat impacted by higher wind speeds. 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2012.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2012.PNG)
 
 <p align="center">
 FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016
@@ -310,16 +310,16 @@ FIGURE 12: TOTAL CHECKOUTS BY DAILY WIND SPEED IN 2016
 ## Checkouts vs. Daily Humidity 
 Humidity is defined by Dark Sky as “relative humidity, between 0 and 1. Figure 13 shows decreased ridership at higher humidity levels.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2013.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2013.PNG)
 
 <p align="center">
 FIGURE 13: TOTAL CHECKOUTS BY DAILY HUMIDITY IN 2016	
 </p>
 
 ## Checkouts vs. Daily Visibility 
-Visibility is measured in miles and capped at 10 miles, according to Dark Sky. As Figure 14 shows, ridership peaks when visibility is at 10 miles.
+Visibility is measured in miles and capped at 10 miles, according to Dark Sky. As Figure 14 shows, ridership peaked when visibility was at 10 miles.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2014.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2014.PNG)
 
 <p align="center">
 FIGURE 14: TOTAL CHECKOUTS BY DAILY VISIBILITY IN 2016
@@ -332,81 +332,83 @@ Another interesting data discovery was the fact that Saturdays and Sundays had t
 
 Checkout Week Day | Date of Checkout | Max Temperature | Min Temperature | Number of Checkouts
 ----------------- | ------------------- | --------------- | --------------- | -------------------
-Sunday | 2016-05-29 | 71.090 | 44.100 | 2,100
-Saturday | 2016-05-28 | 65.650 | 40.330 | 1,990
-Friday | 2016-06-03 | 74.600 | 56.120 | 1,933
-Wenesday | 2016-06-15 | 85.430 | 51.980 | 1,927
-Saturday | 2016-06-21 | 77.510 | 49.790 | 1,909
-Monday | 2016-06-27 | 87.060 | 58.440 | 1,868
-Saturday | 2016-06-25 | 79.230 | 61.040 | 1,868
-Saturday | 2016-06-04 | 75.500 | 53.410 | 1,857
-Thursday | 2016-03-23 | 84.860 | 59.280 | 1,857
-Friday | 2016-09-02 | 79.770 | 59.500 | 1,855
+Sunday | 2016-09-05 | 86.950 | 49.210 | 638
+Tuesday | 2016-07-27 | 87.150 | 55.300 | 534
+Saturday | 2016-08-06 | 76.320 | 59.090 | 529
+Thursday | 2016-08-05 | 69.330 | 57.110 | 524
+Thursday | 2016-07-29 | 82.480 | 58.620 | 523
+Saturday | 2016-08-07 | 84.200 | 57.750 | 512
+Wednesday | 2016-07-21 | 89.250 | 61.160 | 510
+Sunday | 2016-08-01 | 92.090 | 59.880 | 509
+Wednesday | 2016-08-04 | 70.920 | 58.620 | 509
+Monday | 2016-08-02 | 80.100 | 62.820 | 509
+
 
 ### Lowest Ridership
 
 Checkout Week Day | Date of Checkout | Max Temperature | Min Temperature | Number of Checkouts
 ----------------- | ------------------- | --------------- | --------------- | -------------------
-Saturday | 2016-12-24 | 50.960 | 28.940 | 154
-Sunday | 2016-04-17 | 34.710 | 30.140 | 140
-Sunday | 2016-01-31 | 31.260 | 23.430 | 133
-Wednesday | 2016-12-07 | 15.250 | -1.110 | 105
-Tuesday | 2016-02-02 | 20.870 | 11.430 | 72
-Saturday | 2016-04-16 | 34.430 | 31.310 | 61
-Sunday | 2016-12-25 | 36.860 | 25.290 | 56
-Wednesday | 2016-03-23 | 43.070 | 22.040 | 18
-Sunday | 2016-12-18 | 19.640 | -6.220 | 17
-Saturday | 2016-12-17 | 5.490 | -7.220 | 16
+Friday | 2016-01-09 | 25.800 | 13.110 | 33
+Tuesday | 2016-12-07 | 16.050 | 0.210 | 32
+Thursday | 2016-03-18 | 26.860 | 19.730 | 30
+Saturday | 2016-12-18 | 18.320 | -6.840 | 26
+Saturday | 2016-04-17 | 35.670 | 30.690 | 24
+Tuesday | 2016-03-23 | 38.610 | 21.560 | 24
+Friday | 2016-12-17 | 6.910 | -6.440 | 21
+Sunday | 2016-02-01 | 27.130 | 21.230 | 20
+Monday | 2016-02-02 | 22.670 | 11.790 | 20
+Saturday | 2016-12-25 | 37.090 | 21.040 | 11
+
 
 ## Checkouts vs. Hourly Weather Variables
 Hourly weather conditions provide better resolution than daily weather conditions. To investigate this, number of checkouts against hourly weather variables were also plotted and compared with the plots using daily weather variables.
 
 ### Checkouts vs. Hourly Temperature
-The scatter plots in Figure 15 and 16 show that the relationship between the number of checkouts and the hourly temperatures are not linear.
+The scatter plots in Figure 15 and 16 show that the relationship between the number of checkouts and the hourly temperatures were not linear.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2015.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2015.PNG)
 
 <p align="center">
 FIGURE 15: TOTAL CHECKOUTS BY HOURLY TEMPERATURE IN 2016
 </p>
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2016.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2016.PNG)
 
 <p align="center">
 FIGURE 16: TOTAL CHECKOUTS BY HOURLY APPARENT TEMPERATURE IN 2016
 </p>
 
 ### Checkouts vs. Hourly Humidity
-Figure 17 shows that humidity affects ridership significantly.
+Figure 17 shows that humidity affected ridership significantly.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2017.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2017.PNG)
 
 <p align="center">
 FIGURE 17: TOTAL CHECKOUTS BY HOURLY HUMIDITY IN 2016	
 </p>
 
 ### Checkouts vs. Hourly Cloud Cover
-As shown in Figure 18 Cloud Cover certainly impacts ridership.
+As shown in Figure 18 Cloud Cover certainly impacted ridership.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2018.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2018.PNG)
 
 <p align="center">
 FIGURE 18: TOTAL CHECKOUTS BY HOURLY CLOUD COVER IN 2016	
 </p>
 
 ### Checkouts vs. Hourly Wind Speed
-Data on wind speed indicates it is clustered heavily in 0 to 8 miles per hour range, as shown in Figure 19.
+Data on wind speed indicated it was clustered heavily in 0 to 8 miles per hour range, as shown in Figure 19.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2019.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2019.PNG)
 
 <p align="center">
 FIGURE 19: TOTAL CHECKOUTS BY HOURLY WIND SPEED IN 2016	
 </p>
 
 ### Checkouts vs. Hourly Visibility
-As shown in Figure 20 visibility at 10 miles has the greatest impact on ridership.
+As shown in Figure 20 visibility at 10 miles had the greatest impact on ridership.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2020.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2020.PNG)
 
 <p align="center">
 FIGURE 20: TOTAL CHECKOUTS BY HOURLY VISIBILITY IN 2016	
@@ -449,7 +451,7 @@ The Checkout Month, Week Day and Hour numeric variables were converted to catego
 
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 21, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2021.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2021.PNG)
 
 <p align="center">
 FIGURE 21: FEATURE CORRELATIONS
@@ -459,7 +461,7 @@ The models used for regression supported the use of several parameters that coul
 
 The dataset was randomly spilt into 70% for training and 30% for testing. For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 22.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2022.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2022.PNG)
 
 <p align="center">
 FIGURE 22: EXTRA TREES REGRESSION MODEL FEATURE IMPORTANCE CHART
@@ -469,12 +471,13 @@ FIGURE 22: EXTRA TREES REGRESSION MODEL FEATURE IMPORTANCE CHART
 
 Metric | Linear | Lasso | Ridge | Bayesian Ridge | Decision Tree | Random Forest | Extra Trees | Nearest Neighbors
 ------ | ------ | ----- | ----- | -------------- | ------------- | ------------- | ----------- | -----------------
-Training Test Score | 0.676 | 0.676 | 0.676 | 0.676 | 1.000 | 0.969 | 1.000 | 0.575
-Test Set Score | 0.696 | 0.696 | 0.696 | 0.696 | 0.718 | 0.825 | 0.840 | 0.476
-R Squared | 0.834519 | 0.834457 | 0.834457 | 0.834448 | 0.847276 | 0.908443 | 0.916278 | 0.690249
-RMSE | 627.95439 | 628.16826 | 628.16826 | 628.19832 | 583.57445 | 361.43485 | 331.86035 | 1082.98114
+Training Test Score | 0.680 | 0.677 | 0.677 | 0.680 | 1.000 | 0.943 | 1.000 | 0.597
+Test Set Score | 0.676 | 0.674 | 0.674 | 0.676 | 0.423 | 0.679 | 0.699 | 0.496
+R Squared | 0.822253 | 0.821127 | 0.821127 | 0.822232 | 0.650078 | 0.824289 | 0.835802 | 0.70400
+RMSE | 46.268837 | 46.533272 | 46.533272 | 46.273848 | 82.481079 | 45.789939 | 43.059707 | 72.051003
 
-The Extra Trees regression model achieved the highest accuracy and the lowest RMSE. All the linear models (Linear, Lasso, Ridge and Bayesian Ridge) had twice the RMSE value of the Extra Trees model.
+
+The Extra Trees regression model achieved the highest accuracy and the lowest RMSE. The Decision Tree model had lowest accuracy and the highest RMSE.
 
 ## Regression Modeling with Numerical Feature Set
 
@@ -483,28 +486,35 @@ Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 tot
 Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
 
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2023.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2023.PNG)
 
 <p align="center">
 FIGURE 23: FEATURE CORRELATION
 </p>
 
-For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Extra Tree model is shown in Figure 24.
+For each model the training and test scores, R Squared and RMSE results were collected and summarized. In addition, the Decision Tree, Random Forest and Extra Trees models also had their Feature Importance bar charts plotted. The chart for Random Forest and the Extra Trees models are shown in Figures 24 and 25, respectively.
 
-![](https://github.com/hbhasin/Capstone-Project-1/blob/master/figures/Figure%2024.PNG)
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2024.PNG)
 
 <p align="center">
 FIGURE 24: RANDOM FOREST REGRESSION MODEL FEATURE IMPORTANCE CHART
+</p>
+
+![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2025.PNG)
+
+<p align="center">
+FIGURE 25: EXTRA TREES REGRESSION MODEL FEATURE IMPORTANCE CHART
 </p>
 
 ## Regression Modeling Summary – Numerical Feature Set
 
 Metric | Linear | Lasso | Ridge | Bayesian Ridge | Decision Tree | Random Forest | Extra Trees | Nearest Neighbors
 ------ | ------ | ----- | ----- | -------------- | ------------- | ------------- | ----------- | -----------------
-Training Test Score | 0.433 | 0.433 | 0.433 | 0.433 | 1.000 | 0.975 | 1.000 | 0.880
-Test Set Score | 0.448 | 0.447 | 0.447 | 0.447 | 0.741 | 0.854 | 0.838 | 0.646
-R Squared | 0.669090 | 0.668243 | 0.668243 | 0.668785 | 0.861079 | 0.924077 | 0.915609 | 0.803447
-RMSE | 1142.475 | 1144.818 | 1144.818 | 1143.319 | 534.800 | 302.172 | 334.397 | 733.229
+Training Test Score | 0.452 | 0.444 | 0.444 | 0.451 | 1.000 | 0.947 | 1.000 | 0.867
+Test Set Score | 0.470 | 0.463 | 0.463 | 0.471 | 0.481 | 0.735 | 0.739 | 0.616
+R Squared | 0.655919 | 0.680605 | 0.680605 | 0.685989 | 0.693454 | 0.857242 | 0.859465 | 0.784742
+RMSE | 74.533468 | 75.555613 | 75.555613 | 74.519813 | 73.070383 | 37.319948 | 36.782801 | 54.076287
+
 
 ### Regression Modeling Summary
 * The data exploration phase of this study revealed the significance of weather variables on the ridership. The regression modeling phase confirmed this to be accurate. Looking at the feature importance graphs generated by the Extra Trees and Random Forest models, the weather attributes rank the highest.
