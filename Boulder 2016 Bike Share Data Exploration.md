@@ -28,7 +28,7 @@ This study has three parts:
 
 Data for this study was downloaded from several sources and combined using the following steps:
 1. Downloaded Boulder B-cycle May 2011-January 2017 Trip Data from [Dropbox](https://www.dropbox.com/s/hk8csl6fm4q0221/Boulder%20B-cycle%20May%202011-January%202017%20Trip%20Data.xlsx?dl=0). The columns names were changed to comply with Python code best practices and only rows for 2016 were kept for this exercise.
-2. Created a list of the 1849 combinations of the 43 checkout/return kiosks. Used [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) to provide the bicycling distance and time between each checkout and return kiosk. Adopted Tyler’s method of finding the average distance by taking the distance from each checkout-return pair’s distance separately then averaging it. As he pointed out in his study, this approach was taken “because of the large number of one-way streets in the Boulder downtown area where the kiosks are highly clustered”. Google only supports a maximum of 2500 requests a day, so it took two days to obtain this data.
+2. Created a list of the 1849 combinations of the 43 checkout/return kiosks. Used [Google Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/) to provide the bicycling distance and time between each checkout and return kiosk. Google only supports a maximum of 2500 requests a day, so it took two days to obtain this data.
 3. Obtained daily and hourly weather data via [Dark Sky API](https://darksky.net/dev/) for all of 2016. Dark Sky supports up to 1000 requests per day.
 
 
