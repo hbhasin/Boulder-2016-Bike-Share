@@ -638,13 +638,11 @@ Execution Time (sec) | 9.676564 | 0.301543 | 3.972808 | 3.246149 | 0.106590 | 0.
 Both the Random Forest and the Extra Trees classifiers achieved the highest accuracy and the Naïve Bayes the lowest. The cross validation test accuracy were comparable to the F1 (micro), Precision (micro) and the Recall (micro) accuracies.
 
 ## Classification Modeling Summary
-* The multi-layer perceptron model attained the highest accuracy in classifying the four classes using the categorical feature set. The Naïve Bayes model performed the poorest.
+* The Extra Trees model attained the highest accuracy in classifying the two classes using the categorical feature set. The Naïve Bayes model attained the lowest.
 
-* The Gradient Boosting Classifier achieved the highest accuracy and the Naïve Bayes the lowest with the numerical feature set. While the Multi-Layer Perceptron model had better accuracy than the Gradient Boosting with the categorical feature set it did not fare as well in the numerical feature set.
+* The Random Forest Classifier achieved the highest accuracy and the Naïve Bayes the lowest with the numerical feature set.
 
-* None of the models used in this study were not able to achieve an accuracy greater than 71% either with the categorical or the numerical feature set.
-
-* The non-linear regression models performed better than the linear models. In particular, even with a reduced feature set, the non-linear models such as the Random Forest and the Extra Trees were the best performers with R Squared values well above 0.9.
+* The non-linear classification models (except Naive Bayes) performed better than the linear model.
 
 ## Testing Classifier on unseen samples
 The Random Forest Classifier with a predictive accuracy of 87.8% was used to predict 10 samples (with numerical feature set) from the dataset that had not been used neither in the training nor in the test sets. The results are tabulated below. The classifier predicted 9 of the 10 samples accurately. Of the remaining 1 sample, it predicted one class above the actual class.
@@ -652,8 +650,8 @@ The Random Forest Classifier with a predictive accuracy of 87.8% was used to pre
 
 Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of Checkouts | Class Number
 ------------- | -------------------------- | ------------ | ----------------------------- | ------------
-1 | Greater than 10 | 1	Greater than 10 | 1
-2 | Greater than 10 | 1	Greater than 10 | 1
+1 | Greater than 10 | 1 | Greater than 10 | 1
+2 | Greater than 10 | 1 | Greater than 10 | 1
 3 | Between 1 and 10 | 0 | Between 1 and 10 | 0
 4 | Greater than 10 | 1 | Greater than 10 | 1
 5 | Greater than 10 | 1	| Greater than 10 | 1
@@ -665,7 +663,7 @@ Sample Number | Actual Number of Checkouts | Class Number | Predicted Number of 
 
 # Summary
 
-This in-depth study on Boulder 2016 Bike Share Trips data was undertaken to continue the work that Tyler started on the 2014 data. It agrees with his findings that merging calendar, clock and weather attributes into the Trips dataset can reveal ridership patterns and allow regression and classification techniques to be applied for prediction purposes.
+This in-depth study on Boulder 2016 Bike Share Trips data was undertaken to continue the work that Tyler started on the 2014 Denver Bike Ridership data. It agrees with his findings that merging calendar, clock and weather attributes into the Trips dataset can reveal ridership patterns and allow regression and classification techniques to be applied for prediction purposes.
 
 This study covered three areas:
 
@@ -677,5 +675,4 @@ This study covered three areas:
 
 * Provide and/or present findings to Boulder B-cycle executives to improve future ridership
 * Develop a simple desktop, web or mobile app that takes calendar, clock and weather variables as inputs and predicts the number of checkouts as the output.
-* Undertake similar project for Boulder B-cycle
 * Longmont, CO has just introduced its bike sharing system – this study could be useful to the management.
