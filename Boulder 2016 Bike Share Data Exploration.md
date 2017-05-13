@@ -483,7 +483,7 @@ The Extra Trees regression model achieved the highest accuracy and the lowest RM
 
 Using Checkout Month, Week Day and Hour numeric variables resulted in just 9 total features for regression modeling.
 
-Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, Temperature and Apparent Temperature were highly correlated suggesting that one of them could be removed from the features in the model application.
+Prior to applying the models a feature correlation was performed on all the features to see if any of the features were highly correlated to one another. As shown in Figure 23, there were no features that were correlated with each other.
 
 
 ![](https://github.com/hbhasin/Boulder-2016-Bike-Share/blob/master/figures/Figure%2023.PNG)
