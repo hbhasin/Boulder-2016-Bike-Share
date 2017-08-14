@@ -1,3 +1,4 @@
-theme: jekyll-theme-merlot
 # Site settings
 baseurl: "github.com/hbhasin/Boulder-2016-Bike-Share"
+
+theme: jekyll-theme-merlot
